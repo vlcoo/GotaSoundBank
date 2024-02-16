@@ -1,26 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace GotaSoundBank.SF2 {
-    
+namespace GotaSoundBank.SF2;
+
+/// <summary>
+///     An instrument or preset zone.
+/// </summary>
+public class Zone
+{
     /// <summary>
-    /// An instrument or preset zone.
+    ///     Generators.
     /// </summary>
-    public class Zone {
+    public List<Generator> Generators = new();
 
-        /// <summary>
-        /// Generators.
-        /// </summary>
-        public List<Generator> Generators = new List<Generator>();
-
-        /// <summary>
-        /// Modulators.
-        /// </summary>
-        public List<Modulator> Modulators = new List<Modulator>();
-
-    }
-
+    /// <summary>
+    ///     Modulators.
+    /// </summary>
+    public List<Modulator> Modulators = new();
 }

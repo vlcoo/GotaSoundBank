@@ -1,36 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace GotaSoundBank.DLS {
-    
+namespace GotaSoundBank.DLS;
+
+/// <summary>
+///     Instrument.
+/// </summary>
+public class Instrument
+{
     /// <summary>
-    /// Instrument.
+    ///     Bank Id.
     /// </summary>
-    public class Instrument {
+    public uint BankId;
 
-        /// <summary>
-        /// Instrument name.
-        /// </summary>
-        public string Name = "";
+    /// <summary>
+    ///     Instrument Id.
+    /// </summary>
+    public uint InstrumentId;
 
-        /// <summary>
-        /// Bank Id.
-        /// </summary>
-        public uint BankId;
+    /// <summary>
+    ///     Instrument name.
+    /// </summary>
+    public string Name = "";
 
-        /// <summary>
-        /// Instrument Id.
-        /// </summary>
-        public uint InstrumentId;
-
-        /// <summary>
-        /// Regions.
-        /// </summary>
-        public List<Region> Regions = new List<Region>();
-
-    }
-
+    /// <summary>
+    ///     Regions.
+    /// </summary>
+    public List<Region> Regions = new();
 }
